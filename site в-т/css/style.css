@@ -1,0 +1,549 @@
+/* alice-regular - latin */
+@font-face {
+    font-family: 'Alice';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/alice-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/alice-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  .container {
+      display: flex;
+      justify-content: space-between;
+      background-color: #0a77b8;
+      align-items: center;
+  }
+
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Alice';
+      background-color: #e2eff8;
+  }
+
+  .menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 20px;
+  }
+  li {
+	margin-right:40px; /*Добавляем отступ у пунктов меню*/
+}
+
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+  }
+    /*плавное подчеркивание и левая рамка */
+  .line a { 
+    border-left: 1.5px solid rgb(36, 36, 36); /* Ширина, цвет и вид линии */ 
+    padding: 1.5px; /* Расстояние от линии до текста */
+    background: #7860ff00; /* Цвет фона */
+    color: rgb(36, 36, 36); /* Цвет текста */
+}
+
+.line a {
+	text-decoration:none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+	display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/
+	line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
+	color:rgb(36, 36, 36);/*Задаём цвет ссылки*/
+}
+.line a:after {
+	display: block; /*превращаем его в блочный элемент*/
+	content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+	height: 2px; /*задаём высоту линии*/
+	width: 0%; /*задаём начальную ширину элемента (линии)*/
+	background-color: rgb(36, 36, 36); /*цвет фона элемента*/
+	transition: width 0.4s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+}
+.line a:hover:after,
+.line a:focus:after {
+width: 100%;
+}
+
+header {
+    text-align: center;
+    background-image: url(../img/shapka_profila.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: rgb(11, 0, 43);
+    background-attachment: fixed;
+    background-size: cover;
+    padding-left: 250px;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 45px;
+    color: rgb(36, 36, 36);
+}
+
+h3 {
+    font-size: 25px;
+    color: rgb(36, 36, 36);
+}
+
+h2 {
+    font-size: 20px;
+    color: rgb(36, 36, 36);
+}
+
+h4 {
+    font-size: 17px;
+    color: rgb(36, 36, 36);
+}
+
+
+
+footer {
+    /*max-width: 1024px;*/
+    height: 80px;
+    margin: auto;
+    margin-left: 2px;
+    border: 3px solid #8bcbff;
+    background-color: #e2eff8;
+}
+
+.container_2 {
+    display: flex;
+    /*justify-content: space-between;*/
+    /*background-color: #ffffff;*/
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex-row-div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-right: 300px;
+    align-items: flex-start;
+}
+
+.flex-row-div-between-center {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+    align-items: flex-end;
+    margin-top: 30px;
+}
+
+.wrapper {
+    max-width: 1024px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: cornsilk;
+}
+
+.block1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*justify-content: flex-start;*/
+    /*max-width: 1024px;*/
+    height: 300px;
+    padding-left: 90px;
+    padding-right: 90px;
+    /*padding-top: 100px;*/
+}
+
+.glavnaya /*{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}*/
+
+.text_1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(36, 36, 36);
+    
+}
+
+.block2 {
+    /*display: flex;*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    padding-left: 90px;
+    background-color: #30b1fc;
+}
+
+.text_2 {
+    text-align: center;
+    padding-top: 20px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+    background-size: cover;
+    /*padding-left: 450px;*/
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(36, 36, 36); 
+}
+
+.compet {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.block3 {
+    /*display: flex;*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    padding-left: 90px;
+}
+
+.text_3 {
+    text-align: center;
+    padding-top: 20px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+    background-size: cover;
+    /*padding-left: 450px;*/
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(36, 36, 36); 
+}
+
+.uslugi {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type:circle;
+}
+
+.spisoc_1 {
+    display: flex;
+    width:49%;
+    float:left;
+}
+
+.spisoc_2 {
+    display: flex;
+    width:49%;
+    float:left;
+}
+
+.block4 {
+    /*display: flex;*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    padding-left: 90px;
+    background-color: #30b1fc;
+}
+
+.text_4 {
+    text-align: center;
+    padding-top: 20px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+    background-size: cover;
+    /*padding-left: 450px;*/
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(36, 36, 36); 
+}
+
+a.button {
+    display: inline-block;
+    background: #2196f3;
+    color: #fff;
+    padding: 12px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: Tahoma;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 100;
+  }
+  
+
+.cnopka {
+  margin: 24px;
+  text-align: center;
+}
+
+.text_5 {
+    text-align: center;
+    padding-top: 20px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+    background-size: cover;
+    /*padding-left: 450px;*/
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(36, 36, 36); 
+}
+
+.table {
+    margin: auto;
+	width: 90%;
+	margin-bottom: 20px;
+	border: 2px solid rgb(36, 36, 36);
+	/*border-top: 0,5px solid rgb(36, 36, 36);
+	border-bottom: 0,5px solid rgb(36, 36, 36);*/
+	font-size: 15px;
+	/*background: #ffffff!important;*/
+}
+.table th {
+	font-weight: bold;
+	padding: 7px;
+	background: #2196f3;
+	border: none;
+	text-align: left;
+	font-size: 17px;
+    text-align: center;
+}
+.table td {
+	padding: 5px;
+	border: none;
+	font-size: 16px;
+    
+}
+.table tbody tr {
+	background: #8bcbff!important;
+}
+
+
+
+/*Для портфолио*/
+.section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    padding-left: 90px;
+    padding-right: 90px;
+    border-bottom: 2px solid #2196f3;
+}
+
+.picture_1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    order: 1;
+    max-width: 50%;
+    height: auto;
+    
+}
+
+.wording_1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: flex-end;
+    color: rgb(36, 36, 36);
+    order: 2;
+    left: 35%;
+    right: 10%;
+}
+
+.section2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    padding-left: 90px;
+    padding-right: 90px;
+    border-bottom: 2px solid #2196f3;
+}
+
+.picture_2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.wording_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(36, 36, 36);
+    padding-right: 90px;
+    
+}
+
+.section3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    padding-left: 90px;
+    padding-right: 90px;
+    border-bottom: 2px solid #2196f3;
+}
+
+.section4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+
+/*для контанктов*/
+
+.grid-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2vw;
+    justify-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #2196f3;
+}
+
+.main-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+	width: 200px;
+	border:3px ridge #2196f3;
+	padding: 30px;
+	border-radius: 30px;
+	box-shadow: 1px 1px 6px 3px #2196f3;
+}
+
+.flex-row-kontakt {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.flex-row-div-kontakt {
+    display: flex;
+    justify-content: center;
+    /*margin-top: 30px;
+    margin-right: 300px;
+    align-items: flex-start;*/
+}
+
+/*Для формы*/
+.flex-col
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+    .border_div
+    {
+        border: solid 1px #2196f3;
+        border-radius: 100px;
+        padding: 50px;
+        margin: 20px;
+        box-shadow: 1px 1px 6px 3px #2196f3;
+    }
+
+    .middle 
+    { 
+    /*grid-area: middle;*/  
+        display: flex;
+        /*flex-direction: column;*/
+        align-items: center;
+        width: 300px;
+        justify-content: center;
+        border: solid 1px #2196f3;
+        border-radius: 100px;
+        padding: 50px;
+        margin: 20px;
+        box-shadow: 1px 1px 6px 3px #2196f3;
+    }    
+
+    .left 
+        { 
+        grid-area: left; 
+        }
+        .right
+        { 
+        grid-area: right; 
+        }
+
+        .form-div
+    {
+        padding-bottom: 20px;
+    }
+    .flex-row
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .align-center
+    {
+        text-align: center;
+    }
+
+    .input-text
+    {
+    border-radius: 10px;
+    background-color: #8bcbff;
+    border-color: #2196f3;
+    width: 160px;
+    height: 30px;
+    }
+
+    .noselect{
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+    main{
+        background: var(--background-color);
+        color: var(--text-color);
+    }
+    :root{
+        --dark-background-color: #042a49;
+        --dark-text-color:white;
+    }
+    body.theme-dark{
+        --background-color: var(--dark-background-color);
+        --text-color:var(--dark-text-color);
+    }
+    @media (prefers-color-scheme: dark) {
+        body.theme-auto{
+        --background-color: var(--dark-background-color);
+        --text-color:var(--dark-text-color);
+        }
+    }
